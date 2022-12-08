@@ -1,0 +1,40 @@
+.navBarList{
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 20px;
+    margin:0;
+}
+
+.logo{
+    display: flex;
+    align-self: flex-start;
+    flex-grow: .75;
+}
+
+.nav{
+    font-size: 15px;
+    color:#000000;
+    text-decoration: none;
+    list-style-type: none;  
+    padding-top: 1rem;
+    text-transform: uppercase;
+    margin-bottom: 1%;
+}
+
+.nav:nth-child(6){
+    margin-right: 10%;
+}
+
+.nav:hover{
+    text-decoration: underline;
+}
+
+.link{
+    display: inline-block;
+}
+
+.flexinner{
+    display: flex;
+    align-items: center;
+}
