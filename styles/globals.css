@@ -11,7 +11,7 @@ ul{
 }
 
 body{
-  background-color: #79767b;
+  background-color: #8d8990;
 }
 
 a {
@@ -24,14 +24,39 @@ a {
 }
 
 
-button{
+/* button{
   border-radius: 8px;
   width: 210;
   height: 70px;
-}
+} */
 
 footer{
   padding-left: 0;
   padding-right: 0;
 }
 
+::placeholder{
+  color: #0f1047;
+}
+
+h2{
+  font-size: 40px;
+}
+
+/* input, select{
+  background-color: #8d8990;
+  height: 3rem;
+  width: 80%;
+  border-bottom: 4px solid rgb(51, 46, 51);
+  color: #ffffff;
+} */
+
+/* form{
+  background-color: #ffffff;
+  width: 40%;
+} */
+
+/* textarea{
+  min-width: 300px;
+  height: auto;
+} */
