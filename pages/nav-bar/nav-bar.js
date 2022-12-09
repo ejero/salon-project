@@ -14,11 +14,11 @@ export default function NavBar(){
                         width={330}
                     />
                 </Link></li>
-                <li className={styles.nav}><Link href="/" lassName={styles.link}>Home</Link></li>
-                <li className={styles.nav}><Link href="../about/about" lassName={styles.link}>About</Link></li>
-                <li className={styles.nav}><Link href="../appointments/appointments" lassName={styles.link}>appointments</Link></li>
-                <li className={styles.nav}><Link href="../salon-services/services" lassName={styles.link}>Services</Link></li>
-                <li className={styles.nav}><Link href="../contact/contact" lassName={styles.link}>Contact Us</Link></li>
+                <li className={styles.nav}><Link href="/" className={styles.link}>Home</Link></li>
+                <li className={styles.nav}><Link href="../about/about" className={styles.link}>About</Link></li>
+                <li className={styles.nav}><Link href="../appointments/appointments" className={styles.link}>appointments</Link></li>
+                <li className={styles.nav}><Link href="../salon-services/services" className={styles.link}>Services</Link></li>
+                <li className={styles.nav}><Link href="../contact/contact" className={styles.link}>Contact Us</Link></li>
             </ul>
         </>
     )
