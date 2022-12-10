@@ -35,8 +35,8 @@ footer{
   padding-right: 0;
 }
 
-::placeholder{
-  color: #0f1047;
+::placeholder, select{
+  color: #676772;
 }
 
 h2{
@@ -44,20 +44,12 @@ h2{
   text-align: center;
 }
 
-/* input, select{
-  background-color: #8d8990;
-  height: 3rem;
-  width: 80%;
-  border-bottom: 4px solid rgb(51, 46, 51);
-  color: #ffffff;
-} */
 
-/* form{
-  background-color: #ffffff;
-  width: 40%;
-} */
+textarea{
+  height: 44rem;
+}
 
-/* textarea{
-  min-width: 300px;
-  height: auto;
-} */
+p{
+  margin: 0;
+}
+

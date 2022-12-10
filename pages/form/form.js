@@ -7,6 +7,7 @@ import setMinutes from "date-fns/setMinutes";
 import setHours from "date-fns/setHours";
 import Image from 'next/image'
 import afro from '../../public/images/afro.jpg'
+import chair from '../../public/images/salon-chair.jpg'
 
 
 
@@ -21,12 +22,12 @@ function ContactForm(){
 
     return (
     <>
-        <h2>Scheudle an appointment</h2>
+        {/* <h2>Scheudle an appointment</h2> */}
         <div className={styles.pageStyle}>
-        <Image className={styles.img} src={afro} alt="lady with afro" />
+        <Image className={styles.img} src={chair} alt="salon chairs" />
         <div className={styles.formContainer}>
             <form class={styles.form}>
-
+                <p>Can't wait to see you!</p>
                 <input class={styles.formInput} type='text'
                 placeholder= 'First name'
                 value={firstName}
@@ -54,13 +55,13 @@ function ContactForm(){
                     setService(e.target.value)
                 }}
                 >
-                <option class={styles.formInput} value='cut'>cut</option>
-                <option class={styles.formInput} value='color'>color</option>
-                <option class={styles.formInput} value='shampoo'>shampoo</option>
-                <option class={styles.formInput} value='perm'>perm</option>
-                <option class={styles.formInput} value='braid'>braid</option>
-                <option class={styles.formInput} value='curly cut'>curly cut</option>
-                <option class={styles.formInput} value='consultation'>consultation</option>
+                <option class={styles.formInput} value='cut'>Cut</option>
+                <option class={styles.formInput} value='color'>Color</option>
+                <option class={styles.formInput} value='shampoo'>Shampoo</option>
+                <option class={styles.formInput} value='perm'>Perm</option>
+                <option class={styles.formInput} value='braid'>Braid</option>
+                <option class={styles.formInput} value='curly cut'>Curly cut</option>
+                <option class={styles.formInput} value='consultation'>Consultation</option>
                 </select>
 
                 <DatePicker className={styles.formInput}
@@ -82,7 +83,7 @@ function ContactForm(){
                 value={message}
                 onChange={(e) => setMessage(e.target.value)} />
 
-                <button class={styles.formInput}>Submit Form</button>
+                <button className={styles.btn}>Submit Form</button>
 
             </form> 
             </div>   

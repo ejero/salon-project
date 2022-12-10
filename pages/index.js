@@ -4,6 +4,7 @@ import styles from '../styles/Home.module.css'
 import NavBar from './nav-bar/nav-bar'
 import img from '../public/images/stylist/kinkyroots.png'
 import Link from 'next/link';
+import ContactForm from './form/form'
 
 
 export default function Home() {  
@@ -58,6 +59,7 @@ export default function Home() {
             <DispalyImg />
           </div>
         </div>
+        <ContactForm />
         <Footer />
       </>
   )
