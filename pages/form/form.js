@@ -5,6 +5,10 @@ import "react-datepicker/dist/react-datepicker.css";
 import setSeconds from "date-fns/setSeconds";
 import setMinutes from "date-fns/setMinutes";
 import setHours from "date-fns/setHours";
+import Image from 'next/image'
+import afro from '../../public/images/afro.jpg'
+
+
 
 function ContactForm(){
     const [firstName, setFirstName] = useState('')
@@ -14,31 +18,38 @@ function ContactForm(){
     const [date, setDate] = useState(new(Date))
     const [message, setMessage] = useState('')
 
-    return (
-        <div className={styles.formContainer}>
-                <h2>Scheudle an appointment</h2>
-            <form class={styles.formInput}>
 
-                <div className={styles.name}>
+    return (
+    <>
+        <h2>Scheudle an appointment</h2>
+        <div className={styles.pageStyle}>
+        <Image className={styles.img} src={afro} alt="lady with afro" />
+        <div className={styles.formContainer}>
+            <form class={styles.form}>
+
                 <input class={styles.formInput} type='text'
                 placeholder= 'First name'
                 value={firstName}
+                required
                 onChange={(e) => setFirstName(e.target.value)} />
 
                 <input class={styles.formInput} type='text'
                 placeholder= 'Last name'
                 value={lastName}
+                required
                 onChange={(e) => setLastName(e.target.value)} />
-                </div>
+            
 
 
                 <input class={styles.formInput} type='email'
                 placeholder= 'Email'
                 value={email}
+                required
                 onChange={(e) => setEmail(e.target.value)} />
 
                 <select class={styles.formInput}
                 value={service}
+                required
                 onChange={(e) => {
                     setService(e.target.value)
                 }}
@@ -57,6 +68,7 @@ function ContactForm(){
                     // filterDate={d => {
                     //     return new Date() > d;
                     // }}
+                    required
                     placeholderText="Select appt Date"
                     selected={date}
                     onChange={(date) => setDate(date)}
@@ -72,8 +84,10 @@ function ContactForm(){
 
                 <button class={styles.formInput}>Submit Form</button>
 
-            </form>    
+            </form> 
+            </div>   
             </div>
+        </>
     )
 }
 
