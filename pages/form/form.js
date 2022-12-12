@@ -26,7 +26,7 @@ function ContactForm(){
         <Image className={styles.img} src={chair} alt="salon chairs" />
         <div className={styles.formContainer}>
             <form className={styles.form}>
-                <p>Can't wait to see you!</p>
+                <p>Can not wait to see you!</p>
                 <input class={styles.formInput} type='text'
                 placeholder= 'First name'
                 value={firstName}
