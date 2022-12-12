@@ -2,9 +2,6 @@ import styles from './Contact-Form.module.css'
 import { useState } from 'react';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
-import setSeconds from "date-fns/setSeconds";
-import setMinutes from "date-fns/setMinutes";
-import setHours from "date-fns/setHours";
 import Image from 'next/image'
 import afro from '../../public/images/afro.jpg'
 import chair from '../../public/images/salon-chair.jpg'
@@ -27,7 +24,7 @@ function ContactForm(){
         <div className={styles.formContainer}>
             <form className={styles.form}>
                 <p>Can not wait to see you!</p>
-                <input class={styles.formInput} type='text'
+                <input className={styles.formInput} type='text'
                 placeholder= 'First name'
                 value={firstName}
                 required

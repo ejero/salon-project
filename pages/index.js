@@ -49,9 +49,9 @@ export default function Home() {
   return ( 
       <>
       <Head>
-        <Link rel="preconnect" href="https://fonts.googleapis.com"></Link>
+        {/* <Link rel="preconnect" href="https://fonts.googleapis.com"></Link>
         <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></Link> 
-        <Link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@600;800&display=swap" rel="stylesheet"></Link>
+        <Link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@600;800&display=swap" rel="stylesheet"></Link> */}
       </Head>
 
       <NavBar />
