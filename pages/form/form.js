@@ -20,6 +20,11 @@ function ContactForm(){
 
     const handleSubmit = async(e) => {
         e.preventDefault();
+        setFirstName('');
+        setLastName('')
+        setEmail('')
+        setService('cut')
+        setMessage('')
 
         const data = {
             "firstname": firstName,
@@ -31,6 +36,7 @@ function ContactForm(){
         };
 
         const record = await pb.collection('appointment').create(data);
+
     }
 
 
