@@ -2,7 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
 import NavBar from './nav-bar/nav-bar'
-import img from '../public/images/stylist/kinkyroots.png'
+import img from '../public/images/kinkyroots.png'
 import Link from 'next/link';
 import ContactForm from './form/form'
 
@@ -28,6 +28,7 @@ export default function Home() {
           alt="main stylist" 
           width="600"
           height="760"
+          priority
           />
       </>
     )
