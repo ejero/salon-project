@@ -37,6 +37,7 @@ footer{
 
 ::placeholder, select{
   color: #676772;
+  text-transform: uppercase;
 }
 
 h2{
@@ -47,9 +48,6 @@ h2{
 
 textarea{
   height: 44rem;
-}
-
-p{
-  margin: 0;
+  color: #fff;
 }
 

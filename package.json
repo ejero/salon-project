@@ -28,6 +28,7 @@
     "react-datepicker": "^4.8.0",
     "react-dom": "18.2.0",
     "reactstrap": "^9.1.5",
-    "styled-components": "^5.3.6"
+    "styled-components": "^5.3.6",
+    "talkjs": "^0.15.5"
   }
 }

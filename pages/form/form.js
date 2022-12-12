@@ -22,11 +22,10 @@ function ContactForm(){
 
     return (
     <>
-        {/* <h2>Scheudle an appointment</h2> */}
-        <div className={styles.pageStyle}>
+        <div id="formID" className={styles.pageStyle}>
         <Image className={styles.img} src={chair} alt="salon chairs" />
         <div className={styles.formContainer}>
-            <form class={styles.form}>
+            <form className={styles.form}>
                 <p>Can't wait to see you!</p>
                 <input class={styles.formInput} type='text'
                 placeholder= 'First name'
@@ -34,7 +33,7 @@ function ContactForm(){
                 required
                 onChange={(e) => setFirstName(e.target.value)} />
 
-                <input class={styles.formInput} type='text'
+                <input className={styles.formInput} type='text'
                 placeholder= 'Last name'
                 value={lastName}
                 required
@@ -42,26 +41,26 @@ function ContactForm(){
             
 
 
-                <input class={styles.formInput} type='email'
+                <input className={styles.formInput} type='email'
                 placeholder= 'Email'
                 value={email}
                 required
                 onChange={(e) => setEmail(e.target.value)} />
 
-                <select class={styles.formInput}
+                <select className={styles.formInput}
                 value={service}
                 required
                 onChange={(e) => {
                     setService(e.target.value)
                 }}
                 >
-                <option class={styles.formInput} value='cut'>Cut</option>
-                <option class={styles.formInput} value='color'>Color</option>
-                <option class={styles.formInput} value='shampoo'>Shampoo</option>
-                <option class={styles.formInput} value='perm'>Perm</option>
-                <option class={styles.formInput} value='braid'>Braid</option>
-                <option class={styles.formInput} value='curly cut'>Curly cut</option>
-                <option class={styles.formInput} value='consultation'>Consultation</option>
+                <option className={styles.formInput} value='cut'>CUT</option>
+                <option className={styles.formInput} value='color'>COLOR</option>
+                <option className={styles.formInput} value='shampoo'>SHAMPOO</option>
+                <option className={styles.formInput} value='perm'>PERM</option>
+                <option className={styles.formInput} value='braid'>BRAID</option>
+                <option className={styles.formInput} value='curly cut'>CURLY CUT</option>
+                <option className={styles.formInput} value='consultation'>CONSULTATION</option>
                 </select>
 
                 <DatePicker className={styles.formInput}
