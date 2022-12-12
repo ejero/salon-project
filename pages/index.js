@@ -5,8 +5,8 @@ import NavBar from './nav-bar/nav-bar'
 import img from '../public/images/kinkyroots.png'
 import Link from 'next/link';
 import ContactForm from './form/form'
-
-
+import React, { Fragment } from 'react'
+import ChatwootWidget from '../components/ChatwootWidget'
 
 export default function Home() {  
   function WelcomeMessage(){
@@ -50,9 +50,6 @@ export default function Home() {
   return ( 
       <>
       <Head>
-        {/* <Link rel="preconnect" href="https://fonts.googleapis.com"></Link>
-        <Link rel="preconnect" href="https://fonts.gstatic.com" crossorigin></Link> 
-        <Link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@600;800&display=swap" rel="stylesheet"></Link> */}
       </Head>
 
       <NavBar />
@@ -63,6 +60,7 @@ export default function Home() {
           </div>
         </div>
         <ContactForm />
+        <ChatwootWidget />
         <Footer />
       </>
   )
