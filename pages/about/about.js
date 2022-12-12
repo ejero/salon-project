@@ -2,8 +2,7 @@ import NavBar from '../nav-bar/nav-bar'
 
 
 export default function About(){
-    return (<>
-    <NavBar />  
+    return (<> 
     <h1>About</h1>  
     </> )
 }

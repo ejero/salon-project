@@ -3,9 +3,8 @@ import { useState } from 'react';
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Image from 'next/image'
-import afro from '../../public/images/afro.jpg'
 import chair from '../../public/images/salon-chair.jpg'
-
+import PocketBase from 'pocketbase';
 
 
 function ContactForm(){
@@ -17,12 +16,32 @@ function ContactForm(){
     const [message, setMessage] = useState('')
 
 
+    const pb = new PocketBase('http://127.0.0.1:8090');
+
+    const handleSubmit = async(e) => {
+        e.preventDefault();
+
+        const data = {
+            "firstname": firstName,
+            "lastname": lastName,
+            "email": email,
+            "service": service,
+            "date": date,
+            "message": message
+        };
+
+        const record = await pb.collection('appointment').create(data);
+    }
+
+
+
+
     return (
     <>
         <div id="formID" className={styles.pageStyle}>
         <Image className={styles.img} src={chair} alt="salon chairs" />
         <div className={styles.formContainer}>
-            <form className={styles.form}>
+            <form onSubmit={handleSubmit} className={styles.form}>
                 <p>Can not wait to see you!</p>
                 <input className={styles.formInput} type='text'
                 placeholder= 'First name'

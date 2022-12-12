@@ -1,7 +1,6 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import styles from '../styles/Home.module.css'
-import NavBar from './nav-bar/nav-bar'
 import img from '../public/images/kinkyroots.png'
 import Link from 'next/link';
 import ContactForm from './form/form'
@@ -28,23 +27,11 @@ export default function Home() {
           alt="main stylist" 
           width="600"
           height="760"
-          priority
+          priority={true}
           />
       </>
     )
   }
-
-
-  function Footer(){
-    return(
-      <>
-      <footer>
-        <p className={styles.footer}>Hi</p>
-      </footer>
-      </>
-    )
-  }
-
 
 
   return ( 
@@ -52,7 +39,6 @@ export default function Home() {
       <Head>
       </Head>
 
-      <NavBar />
         <div className={styles.flex}>
           <WelcomeMessage />
           <div className={styles.flexinner}>
@@ -61,7 +47,6 @@ export default function Home() {
         </div>
         <ContactForm />
         <ChatwootWidget />
-        <Footer />
       </>
   )
 }
