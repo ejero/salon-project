@@ -2,7 +2,7 @@ import Link from 'next/link';
 import styles from './Nav.module.css'
 import Image from 'next/image'
 import logo from '../../public/images/logo/kr-logo6.png'
-import ContactForm from '../form/form'
+// import ContactForm from '../form/form'
 
 export default function NavBar(){
     return(
