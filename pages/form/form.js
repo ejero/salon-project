@@ -33,10 +33,9 @@ function ContactForm(){
             "service": service,
             "date": date,
             "message": message
-        };
+        }
 
         const record = await pb.collection('appointment').create(data);
-
     }
 
 
