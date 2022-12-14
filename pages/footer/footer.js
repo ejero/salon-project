@@ -16,26 +16,29 @@ return(
         <div className={styles.icons}>
 
         <Link href="https://twitter.com/lovelittlerose" target="_blank" >
-            <Image className={styles.iconSvg} src={twitter} alt="Twitter logo"/>
+            <Image className={styles.iconSvg} alt="Twitter logo" src={twitter} />
         </Link> 
             
         <Link href="https://github.com/ejero" target="_blank" >
-            <Image  className={styles.iconSvg} src={github} alt="GitHub logo"/>
+            <Image  className={styles.iconSvg} alt="GitHub logo" src={github} />
         </Link>
 
         <Link href="https://www.linkedin.com/in/rosita-emakpo/" target="_blank" >  
-        <Image className={styles.iconSvg} src={ln} alt="LinkedIn logo"/>
+        <Image className={styles.iconSvg} alt="LinkedIn logo" src={ln} />
 
         </Link>    
             <Link href="mailto:rosita@rosita.tech" target="_blank">
-            <Image className={styles.iconSvg} src={mail} alt="email icon" />
+            <Image className={styles.iconSvg} alt="email icon" src={mail}  />
         </Link>
         
         </div>
         
-        <Image src={logo} 
+        <Image 
+            alt="Kinky Roots Logo"
+            src={logo} 
             height={50}
             width={200}
+        
         />
         <p className={styles.rights}>&#169;2022 Kinky roots, LLC, All rights lorem ipsum ullamco laboris nisi </p>
     </div>

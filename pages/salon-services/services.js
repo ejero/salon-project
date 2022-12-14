@@ -10,7 +10,7 @@ export default function Services(){
 
         
         <div className={styles.firstContainer}>
-            <Image className={styles.img} src={pic1}
+            <Image alt="Man cutting hair" className={styles.img} src={pic1}
                     width={400}
                     height={550}
                 />
@@ -46,7 +46,7 @@ export default function Services(){
                 </div>
             </div>
 
-            <Image className={styles.img} src={pic2}
+            <Image alt="hair dye solution" className={styles.img} src={pic2}
                     width={400}
                     height={550}
                 />
@@ -55,7 +55,7 @@ export default function Services(){
 
 
         <div className={styles.firstContainer}>
-            <Image className={styles.img} src={pic3}
+            <Image alt="Black lady sitting at table" className={styles.img} src={pic3}
                     width={400}
                     height={550}
                 />
