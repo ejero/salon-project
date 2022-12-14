@@ -1,6 +1,6 @@
 import styles from './About.module.css'
 import Image from 'next/image'
-import owner from '../../public/images/stylist/owners3.png'
+import owner from '../../public/images/stylist/Owners3.png'
 
 
 export default function About(){

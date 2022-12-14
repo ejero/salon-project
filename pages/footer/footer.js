@@ -3,7 +3,7 @@ import Image from 'next/image'
 import logo from '../../public/images/logo/kr-logo6.png'
 import Link from 'next/link'
 import twitter from './twitter.png'
-import github from './Github-mark-white.png'
+import github from './github-mark-white.png'
 import ln from './In-White-96.png'
 import mail from './mail2.svg'
 
