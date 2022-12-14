@@ -24,8 +24,8 @@ export default function Home() {
       <>
         <Image className={styles.img} src={img}
           alt="main stylist" 
-          width="600"
-          height="760"
+          width="650"
+          height="860"
           priority={true}
           />
       </>

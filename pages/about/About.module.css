@@ -1,0 +1,26 @@
+.container{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-around;
+    margin-left: 3%;
+    margin-right: 3%;
+    height: 90vh;
+}
+
+.img{
+    height: 40rem;
+    width: auto;
+    margin-top: 5%
+}
+
+.head2{
+    font-size: 20px;
+    text-align: center;
+}
+.innerItem{
+    line-height: 45px;
+}
+.head1{
+    text-align: center;
+    margin-top: 25%
+}
