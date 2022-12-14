@@ -18,7 +18,7 @@ export default function NavBar(){
                 <li className={styles.nav}><Link href="/" className={styles.link}>Home</Link></li>
                 <li className={styles.nav}><Link href="../about/about" className={styles.link}>About</Link></li>
                 <li className={styles.nav}><Link href="../salon-services/services" className={styles.link}>Services</Link></li>
-                <li className={styles.nav}><Link href="../contact/contact" className={styles.link}>Contact Us</Link></li>
+                <li className={styles.nav}><Link href="../contact/contact" className={styles.link}>Meet our stylists </Link></li>
             </ul>
         </>
     )

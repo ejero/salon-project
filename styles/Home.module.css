@@ -86,3 +86,14 @@
   height: 150px;
   margin: 0;
 } */
+
+
+.container2{
+  min-height: 100vh;
+  position: relative;
+}
+
+
+.bg-secondary{
+  background-color: #495058;
+}
