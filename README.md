@@ -33,6 +33,12 @@ npm run dev
 * Github: [@ejero](https://github.com/ejero)
 * LinkedIn: [@linkedin.com\/in\/rosita-emakpo](https://linkedin.com/in/linkedin.com\/in\/rosita-emakpo)
 
+## Used
+- React
+- Next.js
+- PocketBase
+- Chatwoot
+
 ## Show your support
 
 Give a ⭐️ if this project helped you!
