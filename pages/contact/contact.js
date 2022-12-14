@@ -7,6 +7,7 @@ import jackie from "../../public/images/stylist/Jackie.jpg"
 import monica from "../../public/images/stylist/Monica.jpg"
 import jamal from "../../public/images/stylist/Jamal.jpg"
 import peter from "../../public/images/stylist/Peter.jpg"
+import noel from "../../public/images/stylist/Noel.jpg"
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from 'react-responsive-carousel';
 
@@ -83,6 +84,15 @@ export default function Stylist(){
                     <p className={`${styles.txt} ${styles.ptag}`}>Speciality: Barber</p>
                 </div>
                 <Image className={`${styles.img}`} src={peter} alt="woman with Amazing afro"/> 
+            </div>
+
+
+            <div className={styles.item}>
+                <div className={styles.imgTitle}>
+                    <h3 className={`${styles.txt} ${styles.h3txt}`}>Noel</h3>
+                    <p className={`${styles.txt} ${styles.ptag}`}>Speciality: Barber</p>
+                </div>
+                <Image className={`${styles.img}`} src={noel} alt="woman with Amazing afro"/> 
             </div>
 
             </Carousel>

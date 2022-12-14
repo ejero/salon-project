@@ -32,6 +32,15 @@
 
 .link{
     display: inline-block;
+    color: #ffffff;
+    font-size: 20px;
+    text-shadow: 1px 1px 1px #4b4c4e;
+    margin-left: 4px;
+}
+
+.link:hover{
+    text-decoration: underline;
+    color: rgb(155, 222, 235);
 }
 
 .flexinner{

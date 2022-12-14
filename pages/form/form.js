@@ -47,7 +47,7 @@ function ContactForm(){
         <Image className={styles.img} src={chair} alt="salon chairs" />
         <div className={styles.formContainer}>
             <form onSubmit={handleSubmit} className={styles.form}>
-                <p>Can not wait to see you!</p>
+                <p className={styles.intro}>See you soon!</p>
                 <input className={styles.formInput} type='text'
                 placeholder= 'First name'
                 value={firstName}
