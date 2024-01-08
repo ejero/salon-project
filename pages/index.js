@@ -22,7 +22,8 @@ export default function Home() {
   function DispalyImg(){
     return(
       <>
-        <Image className={styles.img} src={img}
+        <Image className={styles.img} 
+          src="/images/kinkyroots.png"
           alt="main stylist" 
           width="650"
           height="860"
