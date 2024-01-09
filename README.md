@@ -9,6 +9,7 @@
 > A hair salon application example for all curl types
 
 ### 🏠 [Homepage](https://www.kinkyroots.hair/)
+![alt hompage](/public/images/homepage.png)
 
 ### ✨ [Demo](https://www.kinkyroots.hair/)
 
